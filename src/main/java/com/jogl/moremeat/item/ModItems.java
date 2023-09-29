@@ -14,9 +14,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreMeat.MOD_ID);
 
     //raw goat meat item
-    public static final RegistryObject<Item> GOAT = ITEMS.register("goat", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOAT = ITEMS.register("goat",
+            () -> new Item(new Item.Properties().food(ModFoods.GOAT)));
     //raw goat meat item
-    public static final RegistryObject<Item> COOKED_GOAT = ITEMS.register("cooked_goat", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COOKED_GOAT = ITEMS.register("cooked_goat",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_GOAT)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
