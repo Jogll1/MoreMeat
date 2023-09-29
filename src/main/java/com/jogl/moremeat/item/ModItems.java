@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 //holds all mod items
+//NOTE - to files from minecraft like recipes go to External Libraries/net.minecraft:client:extra:1.20.1
 public class ModItems {
     //a deferred register is a long list of items for when forge loads items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreMeat.MOD_ID);
