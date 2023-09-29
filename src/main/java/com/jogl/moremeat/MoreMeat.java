@@ -1,5 +1,6 @@
 package com.jogl.moremeat;
 
+import com.jogl.moremeat.item.ModCreativeModeTabs;
 import com.jogl.moremeat.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -25,6 +26,8 @@ public class MoreMeat {
     public MoreMeat() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -38,9 +41,10 @@ public class MoreMeat {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.GOAT);
-        }
+//        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+//            event.accept(ModItems.GOAT);
+//            event.accept(ModItems.COOKED_GOAT);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

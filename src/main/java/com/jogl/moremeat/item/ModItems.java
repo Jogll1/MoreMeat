@@ -14,6 +14,8 @@ public class ModItems {
 
     //raw goat meat item
     public static final RegistryObject<Item> GOAT = ITEMS.register("goat", () -> new Item(new Item.Properties()));
+    //raw goat meat item
+    public static final RegistryObject<Item> COOKED_GOAT = ITEMS.register("cooked_goat", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
