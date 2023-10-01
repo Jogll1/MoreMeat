@@ -15,10 +15,19 @@ public class ModItems {
 
     //raw goat meat item
     public static final RegistryObject<Item> GOAT = ITEMS.register("goat",
-            () -> new Item(new Item.Properties().food(ModFoods.GOAT)));
-    //raw goat meat item
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_GOAT)));
+    //cooked goat meat item
     public static final RegistryObject<Item> COOKED_GOAT = ITEMS.register("cooked_goat",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_GOAT)));
+    //goat stew item
+    public static final RegistryObject<Item> GOAT_STEW = ITEMS.register("goat_stew",
+            () -> new Item(new Item.Properties().food(ModFoods.GOAT_STEW).stacksTo(1)));
+    //raw panda meat item
+    public static final RegistryObject<Item> PANDA = ITEMS.register("panda",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_PANDA)));
+    //cooked panda meat item
+    public static final RegistryObject<Item> COOKED_PANDA = ITEMS.register("cooked_panda",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_PANDA)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

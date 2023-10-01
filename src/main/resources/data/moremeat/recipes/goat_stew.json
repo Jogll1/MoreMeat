@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "pgc",
+    " b "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:bowl"
+    },
+    "g": {
+      "item": "moremeat:cooked_goat"
+    },
+    "p": {
+      "item": "minecraft:potato"
+    },
+    "c": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "item": "moremeat:goat_stew"
+  }
+}

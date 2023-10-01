@@ -19,6 +19,9 @@ public class ModCreativeModeTabs {
                         //items to add to more meat creative mode tab
                         pOutput.accept(ModItems.GOAT.get());
                         pOutput.accept(ModItems.COOKED_GOAT.get());
+                        pOutput.accept(ModItems.GOAT_STEW.get());
+                        pOutput.accept(ModItems.PANDA.get());
+                        pOutput.accept(ModItems.COOKED_PANDA.get());
                     })
                     .build());
 

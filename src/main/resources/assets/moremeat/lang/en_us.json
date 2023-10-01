@@ -1,5 +1,8 @@
 {
   "item.moremeat.goat": "Raw Goat",
   "item.moremeat.cooked_goat": "Cooked Goat",
+  "item.moremeat.goat_stew": "Goat Stew",
+  "item.moremeat.panda": "Raw Panda",
+  "item.moremeat.cooked_panda": "Cooked Panda",
   "creativetab.more_meat_tab": "More Meat"
 }
